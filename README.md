@@ -9,16 +9,6 @@
 </dependency>
 ```
 
-## 🎨 Thymeleaf + Layout Dialect
-
-```xml
-<dependency>
-    <groupId>nz.net.ultraq.thymeleaf</groupId>
-    <artifactId>thymeleaf-layout-dialect</artifactId>
-    <version>3.0.0</version>
-</dependency>
-```
-
 ## 🗄️ Spring Data JPA / Hibernate
 
 ```xml
