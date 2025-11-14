@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+li{
+    list-style-type: none;
+}
+/* header */
+header {
+    background-color: #000;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo_Northside {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.title_header {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigate_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
+
+}
+
+.title_header {
+    text-decoration: none;
+
+}
+
+.navigate_header>li {
+    list-style-type: none;
+}
+.navigate_header>li:hover .title_header{
+    color: #EE5022;
+}
+.icon_while {
+    color: #fff;
+    font-size: 22px;
+}
+
+.tools_header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.tools_header>li{
+    list-style-type: none;
+}
+.tools_header>li:hover {
+    cursor: pointer;
+}
+.tools_header>li>a{
+    text-decoration: none;
+    color:#fff
+}
+
+.icon_while:hover{
+    color: blue;
+}
+.dropdown_header{
+    position: relative;
+}
+.dropdown_header:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content {
+    padding-top: 35px;
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer styles moved to footer.jsp inline styles */
+
+
+.infProducts_home{
+    margin-top: 10px;
+}
+.fa-user{
+    font-size: 20px;
+}
+
+
+
+/* ================= SẢN PHẨM BÁN CHẠY ================= */
+.best-products {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+.best-products::-webkit-scrollbar { display: none; }
+
+
