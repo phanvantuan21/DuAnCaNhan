@@ -10,7 +10,7 @@
 /* Info Bar */
 .info-bar {
     background-color: #f8f9fa;
-    padding: 8px 0;
+    padding: 6px 0;
     font-size: 0.85rem;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -33,72 +33,43 @@
 /* Main Header */
 .main-header {
     background-color: white;
-    padding: 15px 0;
+    padding: 10px 0 !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo */
-.logo-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ff4da6 !important;   /* 🔥 màu hồng */
-    text-decoration: none;
-    white-space: nowrap;
+.logo-brand img {
+    height: 90px;
+    width: 90px;                    /* ⭐ BẮT LOGO THÀNH KHUNG VUÔNG */
+    object-fit: cover;              /* ⭐ CẮT VỪA KHUNG ĐỂ TRÒN ĐẸP */
+    display: block;
+
+    border-radius: 50%;             /* ⭐ TRÒN 100% */
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
-/* Search Box */
-.search-box-user {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    border: 2px solid #ff4da6;   /* 🔥 viền ô tìm kiếm */
-    border-radius: 25px;
-    overflow: hidden;
+/* Nav Menu */
+.main-nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.search-box-user input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    font-size: 14px;
-}
-
-.logo-brand:hover {
-    color: #ff1f8a !important;
-}
-
-.search-box-user button {
-    background: #ff4da6;
-    border: none;
-    padding: 0 15px;
-    color: white;
-    cursor:  pointer;
-    transition: background 0.3s;
-}
-
-.search-box-user button:hover {
-    background: #4cae4c;
-}
-
-/* Icon Buttons */
+/* Icons */
 .header-icons {
     display: flex;
     align-items: center;
-    gap: 15px;
-    justify-content: flex-end;
+    gap: 18px;
 }
 
 .icon-link {
     position: relative;
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     text-decoration: none;
     transition: color 0.3s;
     display: flex;
@@ -110,27 +81,9 @@
     color: #5cb85c;
 }
 
-.icon-link .label {
-    font-size: 0.75rem;
-    margin-top: 2px;
-    color: #666;
-    white-space: nowrap;
-}
-
-.badge-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background: #ff4757;
-    color: white;
+.badge {
+    font-size: 0.65rem;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
 }
 
 /* User Dropdown */
@@ -140,119 +93,24 @@
     color: #333;
     display: flex;
     align-items: center;
-    gap: 8px;
     cursor: pointer;
-    padding: 5px 10px;
-}
-
-.user-dropdown .dropdown-toggle:hover {
-    background: #f8f9fa;
-    border-radius: 5px;
-}
-
-.user-dropdown .dropdown-toggle::after {
-    display: none;
-}
-
-.user-avatar-header {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: #5cb85c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border: none;
-    min-width: 250px;
-}
-
-.dropdown-item {
-    padding: 10px 15px;
-    transition: background 0.2s;
-}
-
-.dropdown-item:hover {
-    background: #f8f9fa;
-    color: #5cb85c;
-}
-
-.dropdown-item i {
-    margin-right: 10px;
-    width: 20px;
-}
-
-/* Notification Dropdown */
-.notification-dropdown .dropdown-menu {
-    min-width: 320px;
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.notification-item {
-    padding: 12px;
-    border-bottom: 1px solid #f0f0f0;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.notification-item:hover {
-    background: #f8f9fa;
-}
-
-.notification-item:last-child {
-    border-bottom: none;
-}
-
-.notification-empty {
-    padding: 20px;
-    text-align: center;
-    color: #999;
 }
 
 /* Responsive */
 @media (max-width: 991px) {
     .main-header {
-        padding: 10px 0;
+        padding: 5px 0 !important;
     }
-    
-    .logo-brand {
-        font-size: 1.5rem;
+    .logo-brand img {
+        height: 75px !important;
     }
-    
-    .search-box-user {
-        max-width: 100%;
-    }
-    
-    .header-icons {
-        gap: 10px;
-    }
-    
-    .icon-link .label {
-        font-size: 0.7rem;
+}
+@media (max-width: 991px) {
+    .logo-brand img {
+        height: 70px;
     }
 }
 
-@media (max-width: 768px) {
-    .info-bar {
-        font-size: 0.75rem;
-    }
-    
-    .info-bar a {
-        margin-right: 10px;
-    }
-    
-    .icon-link .label {
-        display: none;
-    }
-}
 </style>
 
 <!-- Info Bar -->
@@ -271,83 +129,69 @@
     </div>
 </div>
 
-<!-- Main Header -->
-<header class="main-header">
-    <div class="container">
-        <div class="row align-items-center">
-            
-            <!-- Logo -->
-            <div class="col-lg-2 col-md-2 col-4">
-                <a class="logo-brand" href="/">Camiune</a>
-            </div>
+<!-- MAIN HEADER -->
+<header class="main-header shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between py-1">
 
-            <!-- Search Box -->
-            <div class="col-lg-6 col-md-5 col-12 order-lg-2 order-md-2 order-3">
-                <form action="/product" method="get" class="search-box-user">
-                    <input type="text" name="keyword" placeholder="Bạn muốn tìm sản phẩm gì hôm nay?"
-                        value="${keyword != null ? keyword : ''}">
-                    <button type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
+        <!-- LOGO -->
+        <a href="/" class="logo-brand d-flex align-items-center">
+            <img src="images/logo/logoCamiune.png" alt="Logo">
+        </a>
 
-            <!-- Header Icons -->
-            <div class="col-lg-4 col-md-5 col-8 order-lg-3 order-md-3 order-2">
-                <div class="header-icons">
-                    
-                    <!-- Khuyến mãi -->
-                    <a href="/promotions" class="icon-link">
-                        <i class="fas fa-bell"></i>
-                        <span class="label">Khuyến mãi</span>
+        <!-- MENU NAV -->
+        <nav class="main-nav d-none d-lg-flex">
+            <ul class="nav gap-4 fw-semibold">
+                <li><a href="/product" class="nav-link text-dark">Sản phẩm</a></li>
+                <li><a href="/product?new=true" class="nav-link text-dark">Hàng Mới</a></li>
+                <li><a href="/best-seller" class="nav-link text-dark">Hàng Bán Chạy</a></li>
+                <li><a href="/denim" class="nav-link text-dark">DENIM</a></li>
+                <li><a href="/outlet" class="nav-link text-danger fw-bold">OUTLET -50%</a></li>
+                <li><a href="/collection" class="nav-link text-dark">Collection</a></li>
+            </ul>
+        </nav>
+
+        <!-- ICON GROUP -->
+        <div class="header-icons">
+
+            <!-- SEARCH -->
+            <a href="/search" class="icon-link text-dark">
+                <i class="fas fa-search"></i>
+            </a>
+
+            <!-- CART -->
+            <a href="/cart" class="icon-link position-relative text-dark">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2 py-1" id="cartCount">0</span>
+            </a>
+
+            <!-- USER -->
+            <c:choose>
+                <c:when test="${not empty sessionScope.user}">
+                    <div class="dropdown user-dropdown">
+                        <a class="text-dark fs-5 dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <li><a class="dropdown-item" href="/orders">Đơn hàng của tôi</a></li>
+                            <li><a class="dropdown-item" href="/profile">Thông tin cá nhân</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/Logout">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </c:when>
+
+                <c:otherwise>
+                    <a href="/Login" class="icon-link text-dark">
+                        <i class="fas fa-user"></i>
                     </a>
+                </c:otherwise>
+            </c:choose>
 
-                    <!-- Giỏ hàng -->
-                    <a href="/cart" class="icon-link">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="label">Giỏ hàng</span>
-                        <c:if test="${not empty sessionScope.user}">
-                            <span class="badge-count" id="cartCount">0</span>
-                        </c:if>
-                    </a>
-
-                    <!-- User Account -->
-                    <c:choose>
-                        <c:when test="${not empty sessionScope.user}">
-                            <div class="dropdown user-dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                    <div class="user-avatar-header">
-                                        ${sessionScope.user.email.substring(0,1).toUpperCase()}
-                                    </div>
-                                    <i class="fas fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="/orders">
-                                        <i class="fas fa-shopping-bag"></i>Đơn hàng của tôi
-                                    </a></li>
-                                    <li><a class="dropdown-item" href="/profile">
-                                        <i class="fas fa-user-edit"></i>Thông tin cá nhân
-                                    </a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/Logout">
-                                        <i class="fas fa-sign-out-alt"></i>Đăng xuất
-                                    </a></li>
-                                </ul>
-                            </div>
-                        </c:when>
-                        <c:otherwise>
-                            <a href="/Login" class="icon-link">
-                                <i class="fas fa-user"></i>
-                                <span class="label">Đăng nhập</span>
-                            </a>
-                        </c:otherwise>
-                    </c:choose>
-                </div>
-            </div>
         </div>
     </div>
 </header>
 
+<!-- JS cập nhật giỏ hàng -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     updateCartCount();
@@ -356,13 +200,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateCartCount() {
     const cartBadge = document.getElementById('cartCount');
     if (!cartBadge) return;
-    
+
     fetch('/cart/count')
-        .then(res => res.text())
-        .then(count => {
-            cartBadge.textContent = count;
-            cartBadge.style.display = parseInt(count) > 0 ? 'flex' : 'none';
-        })
-        .catch(() => cartBadge.style.display = 'none');
+            .then(res => res.text())
+            .then(count => {
+                cartBadge.textContent = count;
+                cartBadge.style.display = parseInt(count) > 0 ? 'flex' : 'none';
+            })
+            .catch(() => cartBadge.style.display = 'none');
 }
 </script>

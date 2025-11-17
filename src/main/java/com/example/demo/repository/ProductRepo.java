@@ -29,7 +29,7 @@ public interface ProductRepo extends JpaRepository<Product, Long> {
         JOIN pd.billDetailList bd
         JOIN bd.bill b
         LEFT JOIN pd.imageList i
-        WHERE b.status = 'success'
+        WHERE b.status = 'SUCCESS'
         GROUP BY p.id, p.name ,pd.quantity
         ORDER BY totalSoldQuantity DESC
     """)

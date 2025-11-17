@@ -33,7 +33,6 @@ public class BillDetail {
     @JoinColumn(name = "product_detail_id")
     private ProductDetail productDetail;
 
-    
 
     @PrePersist
     @PreUpdate

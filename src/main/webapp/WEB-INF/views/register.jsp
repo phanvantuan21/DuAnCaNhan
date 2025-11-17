@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>Đăng ký tài khoản - BeeStore</title>
+    <title>Đăng ký tài khoản</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -177,12 +177,12 @@
     <div class="register-container">
         <!-- HÌNH ẢNH -->
         <div class="register-image">
-            <img src="/images/admin-login-illustration.png" alt="Đăng ký BeeStore">
+            <img src="/images/admin-login-illustration.png" alt="Đăng ký tai khoan">
         </div>
 
         <!-- FORM ĐĂNG KÝ -->
         <div class="register-form">
-            <h2>Tạo tài khoản BeeStore</h2>
+            <h2>Tạo tài khoản Camiune</h2>
             <p>Đăng ký để mua sắm và quản lý đơn hàng dễ dàng hơn.</p>
 
             <form:form modelAttribute="RegistDto" action="/DangKy" method="post">

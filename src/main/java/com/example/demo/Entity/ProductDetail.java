@@ -46,7 +46,7 @@ public class ProductDetail {
     private Product product;
     @OneToMany(mappedBy = "productDetail")
     private List<Image> imageList;
-@OneToMany(mappedBy = "productDetail", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "productDetail", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<ProductDiscount> productDiscount;
     @OneToMany(mappedBy = "productDetail", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<BillDetail> billDetailList;

@@ -1,9 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="sidebar">
-    <div class="logo">
-        <img src="/images/logo/Group.png" alt="Logo">
-        <h2>Admin Page</h2>
+    <div class="logo" style="display:flex; justify-content:center; align-items:center; padding:20px 0;">
+        <img src="/images/logo/logoCamiune.png"
+             style="width:130px; height:auto; display:block; border-radius:50%; border:3px solid white;">
     </div>
     <nav>
         <ul>

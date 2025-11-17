@@ -282,11 +282,11 @@
                                         </div>
                                         <div class="qr-info-item">
                                             <span class="qr-info-label">Số tài khoản:</span>
-                                            <span class="qr-info-value" id="qrAccountNumber">920282</span>
+                                            <span class="qr-info-value" id="qrAccountNumber">0338821468</span>
                                         </div>
                                         <div class="qr-info-item">
                                             <span class="qr-info-label">Chủ tài khoản:</span>
-                                            <span class="qr-info-value" id="qrAccountHolder">NGUYEN NGOC THANH</span>
+                                            <span class="qr-info-value" id="qrAccountHolder">PHAN VAN TUAN</span>
                                         </div>
                                         <div class="qr-info-item">
                                             <span class="qr-info-label">Số tiền:</span>
@@ -355,9 +355,9 @@
                 if (parseInt(selectedVal) === 2) {
                     const amount = finalAmount;
                     const bankId = "mbbank";
-                    const accountNo = "920282";
-                    const accountName = "NGUYEN NGOC THANH";
-                    const description = "Be Store - Đơn hàng " + new Date().getTime();
+                    const accountNo = "0338821468";
+                    const accountName = "PHAN VAN TUAN";
+                    const description = "Camiune - Đơn hàng " + new Date().getTime();
 
                     const qrUrl = "https://img.vietqr.io/image/" + bankId + "-" + accountNo + "-compact2.jpg" +
                         "?amount=" + amount +

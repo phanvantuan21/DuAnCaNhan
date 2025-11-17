@@ -160,13 +160,13 @@
     <div class="login-container">
         <!-- ẢNH BÊN TRÁI -->
         <div class="login-image">
-            <img src="/images/admin-login-illustration.png" alt="Đăng nhập BeeStore Admin">
+            <img src="/images/admin-login-illustration.png" alt="Đăng nhập Admin">
         </div>
 
         <!-- FORM BÊN PHẢI -->
         <div class="login-form">
-            <h2>Chào mừng bạn đến với BeeStore</h2>
-            <p>Đăng nhập để truy cập trang quản trị cửa hàng.</p>
+            <h2>Chào mừng bạn đến với cửa hàng bán áo Camiune</h2>
+            <p>Đăng nhập để truy cập cửa hàng.</p>
 
             <form action="/Login" method="post">
                 <div class="mb-3 text-start">

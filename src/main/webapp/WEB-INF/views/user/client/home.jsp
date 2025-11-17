@@ -16,22 +16,9 @@
 <jsp:include page="../layout/header.jsp"/>
 
 <div class="content-wrapper">
-
+    <div class="banner-section">
     <!-- ================= BANNER VỚI MENU BÊN TRÁI ================= -->
     <div class="banner-with-sidebar">
-        <!-- Menu dọc bên trái -->
-        <div class="sidebar-menu">
-            <ul class="menu-list">
-                <li><a href="/"><i class="fa fa-home"></i> Trang chủ</a></li>
-                <li><a href="/product?categoryId=1"><i class="fa fa-tshirt"></i> Thời trang Nam</a></li>
-                <li><a href="/product?categoryId=2"><i class="fa fa-female"></i> Thời trang Nữ</a></li>
-                <li><a href="/product?categoryId=3"><i class="fa fa-child"></i> Thời trang Trẻ em</a></li>
-                <li><a href="/product?categoryId=4"><i class="fa fa-book"></i> Sách & Văn phòng phẩm</a></li>
-                <li><a href="/product?status=sale"><i class="fa fa-fire"></i> SALE SỐC</a></li>
-                <li><a href="/product?status=new"><i class="fa fa-star"></i> Hàng mới về</a></li>
-            </ul>
-        </div>
-
         <!-- Banner chính giữa với carousel -->
         <div class="main-banner-wrapper">
             <div class="main-banner-slider">
@@ -62,7 +49,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <!-- ================= BANNER QUẢNG CÁO PHỤ ================= -->
     <div class="top-banner-ads">
         <div class="banner-ad">
